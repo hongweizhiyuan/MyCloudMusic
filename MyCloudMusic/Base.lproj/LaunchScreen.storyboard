@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-iN-2EU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-iN-2EU">
                                 <rect key="frame" x="161.66666666666666" y="133" width="70" height="305"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="f03-jf-ilI"/>
@@ -38,6 +38,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SpashBanner" width="74.666664123535156" height="309"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
