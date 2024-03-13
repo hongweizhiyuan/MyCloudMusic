@@ -15,8 +15,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-Ed-RoF" userLabel="Container">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-vn-4yD">
+                                        <rect key="frame" x="161.66666666666666" y="168.66666666666663" width="70" height="305"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="305" id="tGw-rF-F5Y"/>
+                                            <constraint firstAttribute="width" constant="70" id="wGA-7G-m0p"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0J8-bj-yp6">
+                                        <rect key="frame" x="102.66666666666669" y="673.66666666666663" width="188" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="188" id="XxZ-F6-nUn"/>
+                                            <constraint firstAttribute="height" constant="31" id="bcs-0p-ZeN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CopyRight 2024 岐伯科技. All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQZ-MR-hJe">
+                                        <rect key="frame" x="66.333333333333343" y="724.66666666666663" width="260.66666666666663" height="14.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FxA-vn-4yD" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="AxF-v5-G51"/>
+                                    <constraint firstAttribute="bottom" secondItem="bQZ-MR-hJe" secondAttribute="bottom" constant="20" id="Fhp-fV-aG1"/>
+                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="300" id="Iov-4a-PEx"/>
+                                    <constraint firstItem="bQZ-MR-hJe" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="J5T-m3-mfC"/>
+                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="380" id="VVg-WP-leG"/>
+                                    <constraint firstItem="bQZ-MR-hJe" firstAttribute="top" secondItem="0J8-bj-yp6" secondAttribute="bottom" constant="20" id="p0H-uT-X60"/>
+                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="200" id="qDo-rh-6ES"/>
+                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="yzY-S3-MbV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZGM-Ed-RoF" secondAttribute="bottom" id="0sz-Q5-NrC"/>
+                            <constraint firstItem="ZGM-Ed-RoF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6I6-5H-Cph"/>
+                            <constraint firstItem="ZGM-Ed-RoF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EaR-kc-5lW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZGM-Ed-RoF" secondAttribute="trailing" id="wlO-WZ-lds"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,6 +69,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SpashBanner" width="74.666664123535156" height="309"/>
+        <image name="SplashLogo" width="564" height="95"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -16,36 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-iN-2EU">
-                                <rect key="frame" x="161.66666666666666" y="133" width="70" height="305"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXV-B5-h3q" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SpashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Wrm-96-Qt8">
+                                        <rect key="frame" x="161.66666666666666" y="227.66666666666663" width="70" height="305"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="ErQ-NS-bus"/>
+                                            <constraint firstAttribute="height" constant="305" id="daX-gY-X1B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VtT-l6-s9s">
+                                        <rect key="frame" x="102.66666666666669" y="732.66666666666663" width="188" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="188" id="jag-7M-Orc"/>
+                                            <constraint firstAttribute="height" constant="31" id="sA9-Dn-Hux"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CopyRight 2024 岐伯科技. All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRo-ER-ygz">
+                                        <rect key="frame" x="66.333333333333343" y="783.66666666666663" width="260.66666666666663" height="14.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="f03-jf-ilI"/>
-                                    <constraint firstAttribute="height" constant="305" id="y1h-Yz-zdd"/>
+                                    <constraint firstItem="VtT-l6-s9s" firstAttribute="top" secondItem="Wrm-96-Qt8" secondAttribute="bottom" constant="380" id="9S4-IS-nmU"/>
+                                    <constraint firstItem="YRo-ER-ygz" firstAttribute="centerX" secondItem="WXV-B5-h3q" secondAttribute="centerX" id="MxK-f0-Zef"/>
+                                    <constraint firstItem="VtT-l6-s9s" firstAttribute="top" secondItem="Wrm-96-Qt8" secondAttribute="bottom" constant="200" id="P4H-iX-vaN"/>
+                                    <constraint firstItem="YRo-ER-ygz" firstAttribute="top" secondItem="VtT-l6-s9s" secondAttribute="bottom" constant="20" id="StY-Lv-jbi"/>
+                                    <constraint firstAttribute="bottom" secondItem="YRo-ER-ygz" secondAttribute="bottom" constant="20" id="fdD-Wh-W5T"/>
+                                    <constraint firstItem="VtT-l6-s9s" firstAttribute="centerX" secondItem="WXV-B5-h3q" secondAttribute="centerX" id="pqa-bj-NZJ"/>
+                                    <constraint firstItem="Wrm-96-Qt8" firstAttribute="centerX" secondItem="WXV-B5-h3q" secondAttribute="centerX" id="qC2-ma-drg"/>
+                                    <constraint firstItem="VtT-l6-s9s" firstAttribute="top" secondItem="Wrm-96-Qt8" secondAttribute="bottom" constant="300" id="qlV-x7-26l"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CopyRight 2024 岐伯科技. All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIb-3d-1s8">
-                                <rect key="frame" x="66.333333333333343" y="783.66666666666663" width="260.66666666666663" height="14.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HPF-Rp-Zn3">
-                                <rect key="frame" x="102.66666666666669" y="732.66666666666663" width="188" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="bFD-FT-Hb3"/>
-                                    <constraint firstAttribute="height" constant="31" id="ihB-mo-99N"/>
-                                </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MJl-iN-2EU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Hn-7g-zZE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MJl-iN-2EU" secondAttribute="bottom" constant="380" id="495-Dm-dZK"/>
-                            <constraint firstItem="UIb-3d-1s8" firstAttribute="top" secondItem="HPF-Rp-Zn3" secondAttribute="bottom" constant="20" id="ERw-6V-P8x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UIb-3d-1s8" secondAttribute="bottom" constant="20" id="OGP-rv-cFQ"/>
-                            <constraint firstItem="HPF-Rp-Zn3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dr8-A6-Gcd"/>
-                            <constraint firstItem="UIb-3d-1s8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qfG-2B-ymz"/>
+                            <constraint firstItem="WXV-B5-h3q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kjo-kz-CIg"/>
+                            <constraint firstItem="WXV-B5-h3q" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TVE-hk-ExG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WXV-B5-h3q" secondAttribute="bottom" id="XPG-pP-quu"/>
                         </constraints>
                     </view>
                 </viewController>
