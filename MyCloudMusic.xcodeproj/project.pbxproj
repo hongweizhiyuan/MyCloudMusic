@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AB3342BA4887100B3C669 /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AB3332BA4887100B3C669 /* SplashController.m */; };
+		040AB3382BA4898000B3C669 /* LoginHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AB3372BA4898000B3C669 /* LoginHomeController.m */; };
 		047CD33D2B90D32400363257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CD33C2B90D32400363257 /* AppDelegate.m */; };
 		047CD3402B90D32400363257 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CD33F2B90D32400363257 /* SceneDelegate.m */; };
 		047CD3432B90D32400363257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CD3422B90D32400363257 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040AB3322BA4887100B3C669 /* SplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
+		040AB3332BA4887100B3C669 /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
+		040AB3362BA4898000B3C669 /* LoginHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHomeController.h; sourceTree = "<group>"; };
+		040AB3372BA4898000B3C669 /* LoginHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHomeController.m; sourceTree = "<group>"; };
 		047CD3382B90D32400363257 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047CD33B2B90D32400363257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		047CD33C2B90D32400363257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040AB32E2BA487D000B3C669 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				040AB3322BA4887100B3C669 /* SplashController.h */,
+				040AB3332BA4887100B3C669 /* SplashController.m */,
+				040AB3362BA4898000B3C669 /* LoginHomeController.h */,
+				040AB3372BA4898000B3C669 /* LoginHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		047CD32F2B90D32400363257 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +121,7 @@
 		047CD33A2B90D32400363257 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				040AB32E2BA487D000B3C669 /* Controller */,
 				047CD33B2B90D32400363257 /* AppDelegate.h */,
 				047CD33C2B90D32400363257 /* AppDelegate.m */,
 				047CD33E2B90D32400363257 /* SceneDelegate.h */,
@@ -268,7 +286,9 @@
 			files = (
 				047CD3432B90D32400363257 /* ViewController.m in Sources */,
 				047CD33D2B90D32400363257 /* AppDelegate.m in Sources */,
+				040AB3342BA4887100B3C669 /* SplashController.m in Sources */,
 				047CD34E2B90D32600363257 /* main.m in Sources */,
+				040AB3382BA4898000B3C669 /* LoginHomeController.m in Sources */,
 				047CD3402B90D32400363257 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
