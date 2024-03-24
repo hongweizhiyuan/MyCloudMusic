@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,11 +45,9 @@
                                 <constraints>
                                     <constraint firstItem="FxA-vn-4yD" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="AxF-v5-G51"/>
                                     <constraint firstAttribute="bottom" secondItem="bQZ-MR-hJe" secondAttribute="bottom" constant="20" id="Fhp-fV-aG1"/>
-                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="300" id="Iov-4a-PEx"/>
                                     <constraint firstItem="bQZ-MR-hJe" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="J5T-m3-mfC"/>
-                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="380" id="VVg-WP-leG"/>
                                     <constraint firstItem="bQZ-MR-hJe" firstAttribute="top" secondItem="0J8-bj-yp6" secondAttribute="bottom" constant="20" id="p0H-uT-X60"/>
-                                    <constraint firstItem="0J8-bj-yp6" firstAttribute="top" secondItem="FxA-vn-4yD" secondAttribute="bottom" constant="200" id="qDo-rh-6ES"/>
+                                    <constraint firstItem="FxA-vn-4yD" firstAttribute="top" secondItem="ZGM-Ed-RoF" secondAttribute="top" constant="168.66666666666663" id="tpX-Eb-vfq"/>
                                     <constraint firstItem="0J8-bj-yp6" firstAttribute="centerX" secondItem="ZGM-Ed-RoF" secondAttribute="centerX" id="yzY-S3-MbV"/>
                                 </constraints>
                             </view>
@@ -204,7 +203,7 @@
         <image name="SpashBanner" width="74.666664123535156" height="309"/>
         <image name="SplashLogo" width="564" height="95"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
