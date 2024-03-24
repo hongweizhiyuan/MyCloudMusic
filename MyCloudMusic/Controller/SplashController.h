@@ -1,6 +1,6 @@
 //
 //  SplashController.h
-//  MyCloudMusic
+//  启动界面
 //
 //  Created by mac on 2024/3/15.
 //

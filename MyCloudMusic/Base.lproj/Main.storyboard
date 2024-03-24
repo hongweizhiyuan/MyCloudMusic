@@ -96,6 +96,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="手机号登录"/>
                                                 <connections>
                                                     <action selector="primaryClick:" destination="9Za-Bh-Pmt" eventType="touchUpInside" id="7mq-gX-qC8"/>
+                                                    <segue destination="h3t-or-7tW" kind="show" id="5h4-1E-Fp7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="do1-fL-kSN">
@@ -174,6 +175,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGg-mh-Cyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1370" y="-2"/>
+        </scene>
+        <!--登录-->
+        <scene sceneID="zPa-y3-chU">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="h3t-or-7tW" customClass="LoginController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUe-2q-k8L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aOr-vv-jYv">
+                                <rect key="frame" x="16" y="118.99999999999999" width="361" height="220.66666666666663"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clN-XV-c9R">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="RoN-Xx-EXE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="19t-Th-H4r">
+                                        <rect key="frame" x="0.0" y="66" width="361" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="4z2-UC-Awl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-rT-suz">
+                                        <rect key="frame" x="0.0" y="132" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="登录"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="WGC-xu-2oe">
+                                        <rect key="frame" x="0.0" y="186.33333333333331" width="361" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRK-YK-b6Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="立即注册">
+                                                    <color key="baseForegroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy2-Ge-Wh9">
+                                                <rect key="frame" x="267.66666666666669" y="0.0" width="93.333333333333314" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="忘记密码">
+                                                    <color key="baseForegroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kE8-gb-5l1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aOr-vv-jYv" firstAttribute="top" secondItem="kE8-gb-5l1" secondAttribute="top" constant="16" id="VjT-iZ-PVC"/>
+                            <constraint firstItem="kE8-gb-5l1" firstAttribute="trailing" secondItem="aOr-vv-jYv" secondAttribute="trailing" constant="16" id="bWH-V8-Uu7"/>
+                            <constraint firstItem="aOr-vv-jYv" firstAttribute="leading" secondItem="kE8-gb-5l1" secondAttribute="leading" constant="16" id="eRy-OH-MdD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="Bzw-H3-W8x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGl-BP-LqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2127" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0du-QU-Fu7">

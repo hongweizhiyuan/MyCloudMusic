@@ -6,7 +6,7 @@
 //
 
 #import "LoginHomeController.h"
-
+#import "LoginController.h"
 
 @interface LoginHomeController ()
 
@@ -34,6 +34,14 @@
 /// - Parameter sender: <#sender description#>
 - (IBAction)primaryClick:(UIButton *)sender {
     NSLog(@"LoginHomeController primaryClick");
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    UIViewController *target = [storyboard instantiateViewControllerWithIdentifier:@"Login"];
+    
+    // 跳转到指定界面
+    [self.navigationController pushViewController:target animated:YES];
+
 }
 
 @end
