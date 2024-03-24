@@ -6,6 +6,7 @@
 //
 
 #import "LoginController.h"
+#import "RegisterController.h"
 
 @interface LoginController ()
 @property (nonatomic,strong) UIButton *otherButton;
@@ -50,6 +51,13 @@
 
 -(void)otherClick:(UIButton *)sender{
     NSLog(@"LoginController otherClick");
+    
+    RegisterController *target=[RegisterController new];
+
+    //传递参数
+    target.nickname=@"爱学啊";
+
+    [self.navigationController pushViewController:target animated:YES];
 }
 
 @end
