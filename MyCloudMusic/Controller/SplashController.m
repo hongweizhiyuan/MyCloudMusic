@@ -6,7 +6,7 @@
 //
 
 #import "SplashController.h"
-#import "SceneDelegate.h"
+#import "AppDelegate.h"
 
 @interface SplashController ()
 
@@ -23,7 +23,7 @@
     
     //延时3秒
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [SceneDelegate.shared toLoginHome];
+        [AppDelegate.shared toLoginHome];
     });
 }
 

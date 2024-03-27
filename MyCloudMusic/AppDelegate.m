@@ -20,21 +20,31 @@
 }
 
 
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
++(instancetype)shared{
+    return UIApplication.sharedApplication.delegate;
 }
 
-#pragma mark - 进度容器
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+/// 启动登陆主界面
+- (void)toLoginHome{
+    [self setRootViewController:@"LoginHomeNav"];
 }
 
+/// 设置跟控制器
+/// @param data <#data description#>
+- (void)setRootViewController:(NSString *)data{
+    //获取到Main.storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    //实例化场景
+    //因为场景关联了控制器
+    //所以说也可以说实例化了一个控制
+    //只是这个过程是系统创建的
+    //不是我们手动完成
+    UIViewController *target = [storyboard instantiateViewControllerWithIdentifier:data];
+
+    //替换掉原来的根控制器
+    //目的是，我们不希望用户还能返回到原来的界面
+    self.window.rootViewController=target;
+}
 
 @end
