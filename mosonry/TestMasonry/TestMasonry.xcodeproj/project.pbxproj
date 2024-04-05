@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0460CC652BBFE3E900C197BE /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460CC642BBFE3E900C197BE /* SettingController.m */; };
+		0460CC692BBFE9AF00C197BE /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460CC682BBFE9AF00C197BE /* SettingView.m */; };
 		04DDDB162BB99E530095CD73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DDDB152BB99E530095CD73 /* AppDelegate.m */; };
 		04DDDB192BB99E530095CD73 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DDDB182BB99E530095CD73 /* SceneDelegate.m */; };
 		04DDDB1C2BB99E530095CD73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DDDB1B2BB99E530095CD73 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0460CC632BBFE3E900C197BE /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		0460CC642BBFE3E900C197BE /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		0460CC672BBFE9AF00C197BE /* SettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		0460CC682BBFE9AF00C197BE /* SettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
 		04DDDB112BB99E530095CD73 /* TestMasonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMasonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DDDB142BB99E530095CD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04DDDB152BB99E530095CD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +111,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0460CC662BBFE99600C197BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0460CC672BBFE9AF00C197BE /* SettingView.h */,
+				0460CC682BBFE9AF00C197BE /* SettingView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04DDDB082BB99E530095CD73 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		04DDDB132BB99E530095CD73 /* TestMasonry */ = {
 			isa = PBXGroup;
 			children = (
+				0460CC662BBFE99600C197BE /* View */,
 				0460CC622BBFE39B00C197BE /* Controller */,
 				04DDDB142BB99E530095CD73 /* AppDelegate.h */,
 				04DDDB152BB99E530095CD73 /* AppDelegate.m */,
@@ -432,6 +445,7 @@
 				0460CC652BBFE3E900C197BE /* SettingController.m in Sources */,
 				04DDDB272BB99E560095CD73 /* main.m in Sources */,
 				04DDDB192BB99E530095CD73 /* SceneDelegate.m in Sources */,
+				0460CC692BBFE9AF00C197BE /* SettingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
